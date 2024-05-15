@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-apt-get update
-apt-get install -y curl
-service apache2 restart
-curl -fsSL http://169.254.169.254/latest/meta-data/ > /var/www/html/index.html
+if [ "$#" -ne 1 ]; then
+  echo "Usage: $0 <username>"
+  exit 1
+fi
+sudo -u "$1" whoami
