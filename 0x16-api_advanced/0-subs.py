@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Get Reddit Subscribers """
+""" get redit subs """
 import requests
 
 def number_of_subscribers(subreddit):
@@ -16,8 +16,3 @@ def number_of_subscribers(subreddit):
         return data["data"]["subscribers"]
     else:
         return 0
-
-# Example usage
-if __name__ == "__main__":
-    subreddit = "python"
-    print(f"Subscribers: {number_of_subscribers(subreddit)}")
