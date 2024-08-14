@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" get redit subs """
+""" Get Reddit Subscribers """
 import requests
 
 def number_of_subscribers(subreddit):
